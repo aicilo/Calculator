@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #E0FBFC;
+}
+
+.container {
+    background-color: #98C1D9;
+    margin-left: auto;
+    height: 100vh;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.calculator-content {
+    background-color: #293241;
+    width:450px;
+    height: 600px;
+    border: 1px solid #3D5A80;
+    border-radius: 5px;
+    margin: 70px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.calculator-content small {
+    font-weight: bold;
+    padding: 5px 10px;
+    position: relative;
+
+    cursor: pointer;
+}
+
+.calculator-content small:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color: #EE6C4D;
+    width: 10px;
+    left: 10px;
+    bottom: 5px;
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.calculator-content small:hover:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color: #EE6C4D;
+    width: 90px;
+    left: 10px;
+    bottom: 5px;
+}
+
+.calculator-content .input-field {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: default;
+}
+
+
+.input-field #output {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px 0 0;
+    margin-left: 10px;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 18px;
+
+}
+
+.input-field #input {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+    padding: 0 10px;
+    font-size: 35px;
+    font-weight: bold;
+    overflow: hidden;
+    line-height: 0.9;
+    font-size: 35px;
+    word-break: break-all;
+}
+
+
+
+.calculator-content .button-field {
+    margin-top: 10px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-field button {
+    width: 110px;
+    border-style: none;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 3px;
+    border: 1px solid #3D5A80;
+    color: #EE6C4D;
+    background-color: #E0FBFC;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.button-field button:hover  {
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+
+.button-focus {
+    color: #3D5A80;
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+}
+
+
+
+.button-field button:active {
+    color: #3D5A80;
+}
+
+button.operator {
+    background-color: #EE6C4D;
+    color: #E0FBFC;
+    font-size: 40px;
+
+}
+
